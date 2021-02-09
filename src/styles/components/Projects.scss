@@ -1,0 +1,83 @@
+.projects_2 {
+  flex-direction: column;
+  .title {
+    color: $text-color;
+    font-size: 24px;
+  }
+  .tags {
+    display: flex;
+    margin: 15px 0;
+    .btn {
+      padding: 10px;
+    }
+  }
+  .btn {
+    font-size: 14px;
+    // width: 200px;
+    background-color: white;
+    border: 1px solid $text-color;
+    color: $text-color;
+    &:active {
+      background-color: #2f80ed;
+      color: white;
+      border-color: white;
+    }
+    &:hover {
+      border-color: #2f80ed;
+    }
+  }
+}
+#projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+// @media only screen and (min-width: 300px) and (max-width: 767px) {
+// }
+
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//   .projects_2 .tags .btn {
+//     padding: 10px 4px;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) and (max-width: 1400px) {
+// }
+
+// @media (max-width: 1030px) {
+//   .project_2 {
+//     width: 280px;
+//   }
+//   .projects_2 {
+//     img {
+//       max-width: 200px;
+//     }
+//   }
+// }
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .projects_2 {
+    .tags {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .projects_2 {
+    .tags {
+      .btn {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .projects_2 {
+    .tags {
+      .btn {
+        padding: 10px;
+      }
+    }
+  }
+}

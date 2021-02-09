@@ -40,29 +40,47 @@
 i {
   margin-right: 5px;
 }
-@media (max-width: 770px) {
-  .main_info .info div {
-    display: block;
-    height: auto;
-  }
-  .main_info .info .introduction {
-    width: auto;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 430px) {
-  .main_info img {
-    margin: 0 auto;
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  main {
+    max-width: 350px;
   }
   .card {
     display: grid;
   }
-}
-@media (max-width: 380px) {
-  .card {
-    padding: 5px;
-  }
   .container {
     padding: 8px;
+  }
+  .main_info {
+    .info {
+      font-size: 16px;
+      height: auto;
+      div {
+        display: block;
+      }
+      .email_phone {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 16px;
+  }
+  .main_info {
+    .info {
+      div {
+        height: auto;
+        display: block;
+      }
+      .email_phone {
+        margin: 8px 0;
+      }
+      .introduction {
+        width: auto;
+        margin-top: 8px;
+      }
+    }
   }
 }

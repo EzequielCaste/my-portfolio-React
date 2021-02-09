@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  padding: 15px;
+  a {
+    margin-bottom: 2rem;
+  }
+  a:visited {
+    color: $gray-100;
+  }
+  a:hover {
+    color: darken(white, $amount: 55);
+  }
+}

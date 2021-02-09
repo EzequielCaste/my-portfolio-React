@@ -1,6 +1,5 @@
 import React from 'react'
-import './Profile.scss'
-import profile from './profile_pic.png'
+import profile from '../assets/profile_pic.png'
 
 export const Profile = () => {
   return (

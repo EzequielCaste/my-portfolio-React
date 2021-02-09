@@ -1,0 +1,130 @@
+.project_2 {
+  height: 588px;
+  // width: 395px;
+  width: 320px;
+  flex-direction: column;
+  .tags {
+    span {
+      margin-right: 5px;
+    }
+  }
+  img {
+    max-height: 261px;
+    max-width: 351px;
+  }
+  .container {
+    padding: 10px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.project_title {
+  color: $gray-100;
+  font-size: 24px;
+}
+.project_description {
+  color: $text-gray;
+}
+.buttons {
+  display: flex;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #projects {
+    display: inline;
+  }
+  .project_2 {
+    height: 311px;
+    width: auto;
+    flex-direction: row;
+    img {
+      // height: 180px;
+      max-width: 260px;
+      object-fit: contain;
+    }
+    .container {
+      padding: 5px 36px;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .project_2 {
+    width: 280px;
+    .container {
+      .btn {
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .card {
+    padding: 14px;
+  }
+  #projects {
+    width: auto;
+    display: inline-block;
+  }
+  .project_2 {
+    height: 520px;
+    width: auto;
+    img {
+      max-height: 190px;
+      max-width: 275px;
+    }
+    .container {
+      .project_description {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    padding: 16px;
+  }
+  #projects {
+    display: block;
+  }
+  .project_2 {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .container {
+      height: auto;
+      .project_title {
+        margin: 16px 0;
+      }
+      .project_description {
+        margin: 8px 0;
+      }
+    }
+    img {
+      width: 90%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project_2 {
+    .container {
+      .btn {
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const tagList = ['React', 'JavaScript','Node.js','Responsive','SASS' ,'CSS Grid', 'Flexbox','all']

@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #f2f2f2;
   color: #4f4f4f;
@@ -26,8 +27,6 @@ main a:active {
 }
 main a:hover {
   color: #333333;
-}
-.App {
 }
 .title {
   color: #828282;
@@ -55,5 +54,24 @@ img {
   main {
     width: 88%;
     margin: 0 auto;
+  }
+}
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: #5c94e1;
+  border-radius: 12px;
+  padding: 13px 40px;
+  margin-right: 15px;
+  border: 1px solid #5c94e1;
+  &:hover {
+    background-color: white;
+    color: #5c94e1;
+    border: 1px solid #5c94e1;
+  }
+  &:nth-of-type(2) {
+    background-color: white;
+    color: #5c94e1;
+    border: 1px solid #5c94e1;
   }
 }

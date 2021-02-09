@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  margin: 25px 0;
+  .page_indicator {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border: 1px solid $text-color;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    margin: 0 15px;
+    &:active {
+      background-color: #2f80ed;
+      color: white;
+      border-color: white;
+    }
+    &:hover {
+      border-color: #2f80ed;
+    }
+  }
+}
